@@ -1,0 +1,5 @@
+GENUINE = "Genuine"
+FORGED = "Forged"
+TRAIN = "Train"
+TEST = "Forged"
+VALIDATION = "Val"
