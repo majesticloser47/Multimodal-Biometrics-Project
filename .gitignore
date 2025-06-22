@@ -1,3 +1,5 @@
 /venv
 /Dataset
 /SignImages
+*/__pycache__
+*.pyc
