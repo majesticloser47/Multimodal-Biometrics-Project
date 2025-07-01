@@ -22,3 +22,6 @@ number_of_sections = 5
 fps = epoch_frames / epoch_length
 roi_starting_point = number_of_sections * epoch_frames
 roi_idx = [roi_starting_point - 1, -1]
+eeg_seq_len = 64
+sign_seq_len = 256
+eeg_samp_freq = 128
