@@ -183,7 +183,7 @@ def get_signature_feature_vector(path, user_ids, seq_len = 256, overlap = 0.5):
         # Create attention mask, to filter out padding when feeding to transformer
         data_len = min(seq_len - 1, full_len - start)
         attention_mask = torch.tensor([1] + [1] * data_len + [0] * (seq_len - 1 - full_len))
-        sliding_win = torch.tensor(sliding_win)
+        sliding_win = torch.tensor(sliding_win, dtype = torch.float32)
         sign_vector_with_windows.append([sliding_win, attention_mask])
         if end >= full_len:
             break
@@ -284,7 +284,7 @@ def modify_eeg_feature_data_for_transformer(eeg_feature_data):
                 # eeg_padded = torch.cat([feature, padding])
                 eeg_padded = np.vstack([feature, padding])
             # The attention mask should have 1s for real tokens (including the cls_token) and 0s for padding
-            eeg_padded = torch.tensor(eeg_padded)
+            eeg_padded = torch.tensor(eeg_padded, dtype = torch.float32)
             real_len = feature.shape[0]
             mask = np.array([1] * real_len + [0] * (eeg_max_window - real_len))
             attention_mask = torch.tensor(mask, dtype = torch.int64)
