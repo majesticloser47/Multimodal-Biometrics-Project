@@ -3,6 +3,7 @@ FORGED = "Forged"
 TRAIN = "Train"
 TEST = "Forged"
 VALIDATION = "Val"
+ALL = "All"
 MAT_DATA_HEADERS = ['SubjectID',
  'Gen_Forge',
  'EEG',
