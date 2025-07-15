@@ -1,7 +1,7 @@
 GENUINE = "Genuine"
 FORGED = "Forged"
 TRAIN = "Train"
-TEST = "Forged"
+TEST = "Test"
 VALIDATION = "Val"
 ALL = "All"
 MAT_DATA_HEADERS = ['SubjectID',
