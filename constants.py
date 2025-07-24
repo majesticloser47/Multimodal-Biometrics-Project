@@ -4,6 +4,8 @@ TRAIN = "Train"
 TEST = "Test"
 VALIDATION = "Val"
 ALL = "All"
+IDENTIFY = "Identify"
+VERIFY = "Verify"
 MAT_DATA_HEADERS = ['SubjectID',
  'Gen_Forge',
  'EEG',
