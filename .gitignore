@@ -4,3 +4,4 @@
 /SignImages
 **/__pycache__
 **.pyc
+*.pth
