@@ -5,3 +5,5 @@
 **/__pycache__
 **.pyc
 *.pth
+!forgery_model.pth
+!identification_model.pth
