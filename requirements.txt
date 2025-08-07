@@ -1,6 +1,11 @@
-matplotlib==3.10.3
-numpy==2.3.1
-pandas==2.3.0
+matplotlib==3.10.5
+numpy==2.3.2
+optuna==4.4.0
+pandas==2.3.1
+protobuf==6.31.1
 python-dotenv==1.1.1
-scipy==1.16.0
+scikit_learn==1.7.1
+scipy==1.16.1
+shap==0.48.0
 torch==2.7.1+cu128
+tqdm==4.67.1
